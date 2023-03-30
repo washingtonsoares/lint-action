@@ -5,6 +5,8 @@ on:
   push:
     branches:
       - main
+env:
+  ACTIONS_STEP_DEBUG: true
 
 jobs:
   eslint:
@@ -21,3 +23,4 @@ jobs:
           eslint-args: '--ignore-path=.gitignore --quiet'
           extensions: 'js,jsx,ts,tsx'
           annotations: true
+          
