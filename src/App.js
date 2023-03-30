@@ -5,10 +5,15 @@ import { useEffect } from 'react';
 
 function App() {
   const [data, setData] = useState(null);
+  const [count, setCount] = useState(0);
 
   useEffect(() => {
     setData(data + 1);
-  }, []);
+  },[ ]);
+
+  useEffect(() => {
+    setCount(count + 1);
+  },[ ]);
 
   return (
     <div className="App">
