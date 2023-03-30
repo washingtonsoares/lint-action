@@ -19,8 +19,7 @@ jobs:
       - run: npm i # or yarn install
       - uses: sibiraj-s/action-eslint@v2
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }} # Optional
-          eslint-args: '--ignore-path=.gitignore --quiet'
+          eslint-args: ''
           extensions: 'js,jsx,ts,tsx'
           annotations: true
           
