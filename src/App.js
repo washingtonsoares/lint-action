@@ -7,7 +7,7 @@ function App() {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    setData(data + 1)
+    setData(data + 1);
   }, []);
 
   return (
