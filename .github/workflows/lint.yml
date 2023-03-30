@@ -17,7 +17,7 @@ jobs:
       - run: npm i # or yarn install
       - uses: sibiraj-s/action-eslint@v2
         with:
-          eslint-args: '--ignore-path=.gitignore'
+          eslint-args: '--ignore-path=.gitignore --quiet'
           extensions: 'js,jsx,ts,tsx'
           annotations: true
           
